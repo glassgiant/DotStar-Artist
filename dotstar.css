@@ -1,0 +1,15 @@
+
+body { font-size:10pt; font-family: sans-serif; background-color:#eeeeee;}
+h1 {font-size:12pt;}
+
+#myCanvas {width:500px; height:500px; background-color:#000000; margin-bottom:10px; clear:both}
+
+#toolbar	{margin-right:30px; float:left}
+#toolbarImg {background-image:url('dotstar_toolbar_selector.png'); background-repeat:no-repeat; background-position: 0 0}
+#toolbarButton {float:left; height:20; width:20; border:1px solid #000000;}
+
+#palEdit {font-size:8pt; width:50px; margin-left:6px}
+.palbutton {height:16px; width:16px; border:2px #eeeeee solid; float:left}
+.palselected {border:2px #000000 solid !important;}
+
+#arduinocode {width:500px; height:200px; font-size:8pt; color:#666666; white-space:pre-wrap;}

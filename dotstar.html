@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>DotStar Artist</title>
+	<script src="dotstar.js"></script>
+	<link rel="stylesheet" type="text/css" href="dotstar.css">
+</head>
+
+<body onload="loadInit()">
+
+<h1>DotStar Drawing Tool (<a href="?240mm">240mm disk</a> | <a href="?8x32">8x32 panel</a>)</h1>
+<a href="mailto:shawn@glassgiant.com">by Shawn Wilson</a><br />
+
+Model different LED arrangements for DotStar LED discs or rectangles (available from Adafruit.com).  Draw using the tools below.  Copy and paste the Arduino code below into your sketch. <a href="examples/media">Examples</a><br />
+
+<canvas width="500" height="500" id="myCanvas"></canvas><br />
+
+<div id = 'toolbar'>
+	<img src="dotstar_toolbar.png" usemap="#toolmap" id="toolbarimg">
+	<map name="toolmap">
+		<area shape="rect" coords="0,0,29,30" href="javascript:changeTool(0);" alt="Pencil">
+		<area shape="rect" coords="31,0,60,30" href="javascript:changeTool(1);" alt="Marker">
+		<area shape="rect" coords="60,0,89,30" href="javascript:changeTool(2);" alt="Rect">
+		<area shape="rect" coords="90,0,119,30" href="javascript:changeTool(3);" alt="Shell">
+		<area shape="rect" coords="120,0,150,30" href="javascript:changeTool(4);" alt="Fill">
+	</map>
+</div>
+
+<div id="palContainer"></div>
+
+<input id="palEdit" maxlength="7" onkeypress="editPal(event)"><br clear="all"/>
+
+<textarea id="arduinoCode"></textarea>
+</body>
+</html>
