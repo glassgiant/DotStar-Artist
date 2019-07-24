@@ -26,6 +26,8 @@ function changeTool(t) {
 	curTool=t;
 	console.log("Changing tool: " + t);
 	document.getElementById('toolbarimg').style.backgroundPosition = t*30+" 0";
+	if (shape != "240mm")
+		alert("Circle tool only available in 240mm disc mode")
 }
 
 //Select a new palette position number
